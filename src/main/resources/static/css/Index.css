@@ -1,0 +1,29 @@
+body {
+    margin: 20px;
+
+}
+
+
+
+.ratings i {
+    color: green;
+}
+
+.install span {
+    font-size: 12px;
+}
+
+.col-md-4 {
+    margin-top: 27px;
+}
+
+.fixed-size-thumbnail {
+    width: 250px;
+    /* Fixed width */
+    height: 200px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Ensures the image covers the area */
+}
+
+
