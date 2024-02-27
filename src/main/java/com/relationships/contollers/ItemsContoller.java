@@ -60,8 +60,8 @@ public class ItemsContoller {
 
         model.addAttribute("newItem", new Items());
         model.addAttribute("newLogin", new UserLogin());
+        model.addAttribute("allPosts", itemServ.getAllItems());
         model.addAttribute("userLogged", session.getAttribute("userName"));
-
         model.addAttribute("foundPost", itemServ.findById(id));
 
         return "ViewItem.jsp";

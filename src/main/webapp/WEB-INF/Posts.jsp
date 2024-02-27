@@ -38,7 +38,7 @@
                                 <c:out value="${user}"></c:out>
                             </h1>
 
-                            <div class="container max-width mt-5" id="resizeTable">
+                            <div class="container-fluid max-width mt-5" id="resizeTable">
 
 
                                 <table class="table table-hover  text-center">
@@ -58,15 +58,15 @@
                                     <tbody>
 
                                         <c:forEach items="${allPosts}" var="post">
-
                                             <tr>
                                                 <!-- <th scope="row">1</th> -->
-                                                <td>${post.getId()}</td>
+                                                <td style="width:3%">${post.getId()}</td>
                                                 <td>${post.getTitle()}</td>
                                                 <td>${post.getPrice()} <span>&#36;</span></td>
                                                 <td>${post.getLocation()}</td>
                                                 <td>${post.getPhoneNum()}</td>
-                                                <td>${post.getDetails()}</td>
+                                                <td style="width:10%" class="overflow-wrap" style="width: 50px;">
+                                                    ${post.getDetails()}</td>
                                                 <td>${post.getUsers()}</td>
                                                 <td>
                                                     <button class="btn btn-primary">Delete</button>
@@ -74,11 +74,13 @@
                                                     <button class="btn btn-danger">Update</button>
                                                 </td>
                                             </tr>
-
                                         </c:forEach>
                                     </tbody>
                                 </table>
                             </div>
                     </body>
+                    <footer>
+                        <%@ include file="commons/Footer.jsp" %>
+                    </footer>
 
                     </html>

@@ -102,5 +102,10 @@
                             <script src="/JS/baseScrips.js"></script>
 
                     </body>
+                    <footer>
+                        <%@ include file="commons/Footer.jsp" %>
+
+                    </footer>
+
 
                     </html>
