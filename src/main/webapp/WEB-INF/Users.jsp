@@ -80,5 +80,10 @@
                                 </table>
                             </div>
                     </body>
+                    <footer>
+                        <%@ include file="commons/Footer.jsp" %>
+
+                    </footer>
+
 
                     </html>

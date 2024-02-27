@@ -93,8 +93,12 @@
                                     </div>
                                     <!-- </section> -->
 
+                                    <%@ include file="commons/Footer.jsp" %>
                                     <!-- Footer -->
                                 </div>
+                              
                             </body>
+                          
+    
 
                             </html>
